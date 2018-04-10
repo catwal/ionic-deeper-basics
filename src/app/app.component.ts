@@ -3,14 +3,15 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-
 import { BoutonPage } from '../pages/bouton/bouton';
 import { ListPage } from '../pages/list/list';
+import { GridPage } from '../pages/grid/grid';
+import { GesturesPage } from '../pages/gestures/gestures';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = ListPage;
+  rootPage:any = BoutonPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
